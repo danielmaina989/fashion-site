@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* navbar */
+#header {
+  background: #f5f6fc;
+}
+.navbar {
+  padding: 0 35px !important;
+}
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  padding: 0 !important;
+  margin-top: 30px;
+}
+.right-menu li {
+  display: inline-block;
+  margin-top: 30px !important;
+}
+.right-menu li .bi {
+  font-size: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.navbar-brand img {
+  width: 160px;
+}
+.navbar-brand {
+  left: 50%;
+  /* on small screens 5px  or no top*/
+  top: 25px;
+  transform: translateX(-50%);
+  position: absolute;
+}
+/* banner */
+.banner-img {
+  margin: 80px 115px ;
+  width: 60% ;
+}
+.banner-img img {
+  width: 100%;
+  margin-bottom: -80px;
+}
+.banner {
+  position: relative;
+}
+.banner-title {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+}
+.banner-title h1 {
+  font-size: 55px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  line-height: 70px;
+  padding: 0 10px 0 10px;
+}
+/* trends */
+#trends {
+  padding: 100px 0;
+}
+.fashion-box {
+  margin: 80px 0;
+}
+.title-style h1 {
+  padding: 40px 0;
+}
+.title-style {
+  margin: 0 auto 80px;
+  height: 120px;
+  width: 80%;
+  max-width: 700px;
+  background: #fff;
+  position: relative;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 50, 0.5);
+}
+.title-style::after {
+  content: "";
+  height: 100px;
+  width: 200px;
+  background-color: #f992a6;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: -1;
+}
+.title-style::before {
+  content: "";
+  height: 100px;
+  width: 200px;
+  background-color: #f992a6;
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  z-index: -1;
+}
+.trend-img {
+  position: relative;
+  margin-bottom: 15px;
+}
+.btn-buy {
+  width: 150px;
+  padding: 10px 0;
+  outline: none !important;
+  border: 0;
+  border-radius: 2px;
+  position: absolute;
+  background: #fff;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  transition: 0.6;
+  opacity: 0;
+  z-index: 1;
+}
+.trend-img:hover .btn-buy {
+  transform: translate(-50%, 50%);
+  bottom: 50%;
+  opacity: 1;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: #333;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.trend-img:hover .overlay {
+  opacity: 0.5;
+  height: 100%;
+}
+/* offer */
+.offer {
+  background-image: url(./images/fashion.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.row {
+  margin: initial !important;
+}
+.subscribe {
+  max-width: 500px;
+  margin-top: 80px;
+  padding: 60px;
+  background: #ffff8c;
+  margin-bottom: 20px;
+}
+.subscribe a {
+  width: 100px;
+  display: block;
+  color: #fff !important;
+  background: #000;
+  text-decoration: none;
+  padding: 5px;
+  text-align: center;
+}
+.offer img {
+  width: 300px;
+  height: 400px;
+  margin: -100px;
+  margin-top: 150px;
+}
+/* fashion blog */
+#blog {
+  margin: 250px 0 150px 0;
+}
+.blog-img{
+    margin-top: 50px;
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+}
+.blog-img img{
+    width: 100%;
+    height: 100%;
+}
+
+/* brands section */
+
+.brand-img {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 50px auto 30px;
+  box-shadow: 0 2px 40px 0 rgba(110, 130, 208, .18);
+}
+.brand-img img{
+    width: 100px;
+    margin: 50px auto;
+}
+/* footer */
+#footer{
+    margin-top: 15px;
+    background: #f5f6fc;
+}
+.payment, .insta-pics, .app-download{
+    margin: 50px auto;
+}
+.payment img{
+    width: 300px;
+    cursor: pointer;
+}
+
+.insta-pics img{
+    width: 75px;
+    padding: 5px;
+    cursor: pointer;
+}
+.app-download img{
+    width: 200px;
+}
+
+/* #footer h4::before{
+    content: '';
+    width: 70px;
+    height: 3px;
+    background: #4f74e8;
+    top: 80px;
+    position: absolute;
+} */
+ .socials-icons{
+    text-align: right;
+}
+.socials-icons .fa-brands{
+    margin: 0 10px auto;
+    font-size: 20px;
+    cursor: pointer;
+}
+#footer .fa-heart{
+    color: red;
+    font-size: 17px;
+}
+#footer .fa-guitar{
+    color: maroon;
+    font-size: 17px;
+}
+#footer .copyright{
+    margin-bottom: -80px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/*  media Queries for small dvice */
+@media only screen and (max-width:900px){
+  .banner-img {
+    margin: 40px auto ;
+    width: 80% ;
+  }
+  .banner-title {
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .banner-title h1 {
+    font-size: 16px;
+    padding: 5px;
+    line-height: 20px;
+  }
+  .title-style h1 {
+    font-size: 25px;
+  }
+  .offer img {
+    margin-bottom: 0 !important;
+    margin-top: 20px !important;
+  }
+  .socials-icons{
+    text-align: center;
+  }
+  .copyright{
+    text-align: center;
+  }
+}
